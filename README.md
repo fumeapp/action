@@ -1,6 +1,6 @@
 # Fume Action
 
-[![Latest Version](https://img.shields.io/github/release/fume/action.svg?style=flat-square)](https://github.com/fume/actio/releases)
+[![Latest Version](https://img.shields.io/github/release/fumeapp/action.svg?style=flat-square)](https://github.com/fumeapp/action/releases)
 
 This Github Action provides a way to directly use Fume within your CI/CD pipeline.
 
