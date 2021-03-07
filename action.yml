@@ -1,4 +1,4 @@
-name: 'Fume'
+name: 'Fume Deployment'
 description: 'Deploy fume environments with Github Actions'
 author: 'Kevin Olson <acidjzz@gmail.com>'
 branding:
