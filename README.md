@@ -43,7 +43,7 @@ jobs:
     - uses: fume/action@master
       with:
         token: ${{ secrets.FUME_TOKEN }}
-        environemnt: ${GITHUB_REF##*/}
+        environment: ${GITHUB_REF##*/}
 ```
 
 #### Explanation
