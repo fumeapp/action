@@ -22,7 +22,7 @@ runs:
       run: echo "::set-output name=dir::$(yarn global bin)"
       shell: bash
     - name: Deploy with Fume
-      run: ${{ steps.yarn-bin.outputs.dir }}/fume deploy ${args.environemnt}
+      run: ${{ steps.yarn-bin.outputs.dir }}/fume deploy ${{ environemnt }}
       env:
-        FUME_TOKEN: ${{ args.token }}
+        FUME_TOKEN: ${{ token }}
       shell: bash
