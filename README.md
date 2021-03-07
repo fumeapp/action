@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: fume/action@master
+    - uses: fumeapp/action@master
       with:
         token: ${{ secrets.FUME_TOKEN }}
         environment: ${GITHUB_REF##*/}
