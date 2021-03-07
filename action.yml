@@ -3,7 +3,7 @@ description: 'Deploy fume environments with Github Actions'
 author: 'Kevin Olson <acidjzz@gmail.com>'
 branding:
   icon: 'upload-cloud'
-  color: 'indigo'
+  color: 'purple'
 inputs:
   environment:
     description: 'Environment to deploy to'
