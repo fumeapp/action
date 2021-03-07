@@ -1,0 +1,25 @@
+name: 'Fume'
+description: 'Deploy fume environments with Github Actions'
+author: 'Kevin Olson <acidjzz@gmail.com>'
+branding:
+  icon: 'upload-cloud'
+  color: 'indigo'
+inputs:
+  environment:
+    description: 'Environment to deploy to'
+    required: true
+  token:
+    description: 'Fume Token'
+    required: true
+runs:
+  using: 'composite'
+  steps:
+    - name: Install Fume
+      run: yarn global add fume-cli
+    - name: Grab and store yarn's gobal bin
+      id: yarn-bin
+      run: echo "::set-output name=dir::$(yarn global bin)"
+    - name: Deploy with Fume
+      run: ${{ steps.yarn-bin.outputs.dir }}/fume deploy ${args.environemnt}
+      env:
+        FUME_TOKEN: ${{ args.token }}
