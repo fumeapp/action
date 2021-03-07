@@ -35,8 +35,8 @@ on:
     branches: [ staging, production ]
 
 jobs:
-  vapor:
-    name: Check out, build and deploy using Fume
+  fume:
+    name: Deploy with Fume
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
