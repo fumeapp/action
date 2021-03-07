@@ -32,7 +32,7 @@ name: Deploy to branches tied to environments
 
 on:
   push:
-    branches: [ staging, production, demo ]
+    branches: [ staging, production ]
 
 jobs:
   vapor:
