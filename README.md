@@ -25,10 +25,10 @@ To do so, you may do the following:
 ### 2. Setting up our Github Action
 
 Next, let's head over to the `Actions` page, and create a new workflow.\
-To keep things simple, let's set up an action that deploys to production as soon as a branch is merged into master:
+To keep things simple, let's set up an action that deploys to environments `production` or `staging` when code is pushed to branches of the same name:
 
 ```yaml
-name: Deploy to branches tied to environments
+name: Deploy with fume
 
 on:
   push:
