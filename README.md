@@ -49,7 +49,7 @@ jobs:
 #### Explanation
 
 The above does a few things:
-1. It does a git checkout out your Laravel App (your repository) using the `actions/checkout` action.
+1. It does a git checkout of your NuxtJS|NestJS App (your repository) using the `actions/checkout` action.
 2. It executes the `fume` CLI command, passing in the arguments given. In our example, this means it runs `fume deploy production`.
 
 If you would like to find out more regarding the syntax used by Github Actions, you can take a look at [this page](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onevent_nametypes).
