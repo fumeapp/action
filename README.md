@@ -43,6 +43,7 @@ jobs:
     - uses: fumeapp/action@master
       with:
         token: ${{ secrets.FUME_TOKEN }}
+        // this passes the name of the branch
         environment: ${GITHUB_REF##*/}
 ```
 
@@ -58,7 +59,7 @@ If you would like to find out more regarding the syntax used by GitHub Actions, 
 
 ## Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+Please see [CHANGELOG](CHANGELOG.md) for more information.
 
 ## Contributing
 
