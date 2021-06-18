@@ -22,7 +22,7 @@ To do so, you may do the following:
 7. Click `Add secret`.
 ![Example of the Project Settings Secrets page](/images/project-settings-secrets.png)
 
-### 2. Setting up our Github Action
+### 2. Setting up our GitHub Action
 
 Next, let's head over to the `Actions` page, and create a new workflow.\
 To keep things simple, let's set up an action that deploys to environments `production` or `staging` when code is pushed to branches of the same name:
