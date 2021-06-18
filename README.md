@@ -43,7 +43,7 @@ jobs:
     - uses: fumeapp/action@master
       with:
         token: ${{ secrets.FUME_TOKEN }}
-        // this passes the name of the branch
+        # this passes the name of the branch
         environment: ${GITHUB_REF##*/}
 ```
 
