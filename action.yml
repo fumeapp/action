@@ -24,6 +24,9 @@ runs:
       id: yarn-bin
       run: echo "::set-output name=dir::$(yarn global bin)"
       shell: bash
+    - name: Run a yarn install
+      run: yarn install
+      shell: bash
     - name: Deploy with Fume
       run: ${{ steps.yarn-bin.outputs.dir }}/fume deploy ${{ inputs.environment }}
       env:
