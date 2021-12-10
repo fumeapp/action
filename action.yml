@@ -14,6 +14,9 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    - name: Check our version of NodeJS
+      run: node --version
+      shell: bash
     - name: Install Fume
       run: yarn global add fume-cli
       shell: bash
