@@ -17,6 +17,8 @@ runs:
     - name: Install Fume
       run: yarn global add fume-cli
       shell: bash
+      env:
+        NODE_OPTIONS: '--max_old_space_size=4096'
     - name: Grab and store yarn's global bin
       id: yarn-bin
       run: echo "::set-output name=dir::$(yarn global bin)"
