@@ -25,4 +25,5 @@ runs:
       run: ${{ steps.yarn-bin.outputs.dir }}/fume deploy ${{ inputs.environment }}
       env:
         FUME_TOKEN: ${{ inputs.token }}
+        NODE_OPTIONS: --max-old-space-size=8192
       shell: bash
