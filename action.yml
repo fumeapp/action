@@ -11,6 +11,10 @@ inputs:
   token:
     description: 'Fume Token'
     required: true
+  target:
+    description: 'Target directory of lambda within repo'
+    required: false
+    default: '.'
 runs:
   using: 'composite'
   steps:
@@ -18,6 +22,7 @@ runs:
       run: npm install -g fume-cli
       shell: bash
     - name: Deploy with Fume
+      working-directory: ${{ inputs.target }}
       run: fume deploy ${{ inputs.environment }}
       env:
         FUME_TOKEN: ${{ inputs.token }}
